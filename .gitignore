@@ -1,0 +1,5 @@
+apache/log/
+mysql/data/
+redis/data/
+redis/log/
+*.log

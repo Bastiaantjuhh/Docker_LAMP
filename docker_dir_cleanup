@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf apache/log/*
+rm -rf mysql/data/*
+rm -rf redis/data/*
+rm -rf redis/log/redis.log
+echo "" > redis/log/redis.log
