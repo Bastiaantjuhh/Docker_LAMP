@@ -1,4 +1,4 @@
-FROM php:7.4.6-apache
+FROM php:7.4.7-apache
 RUN apt-get update && apt-get -y upgrade && apt-get install -y git zlib1g-dev libzip-dev
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 RUN a2enmod rewrite
