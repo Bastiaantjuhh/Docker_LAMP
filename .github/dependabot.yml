@@ -1,0 +1,47 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/php"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 10
+  labels:
+  - Update
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+- package-ecosystem: docker
+  directory: "/phpmyadmin"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 10
+  labels:
+  - Update
+- package-ecosystem: docker
+  directory: "/redis"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 10
+  labels:
+  - Update
+- package-ecosystem: docker
+  directory: "/mysql"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: Europe/Amsterdam
+  open-pull-requests-limit: 10
+  labels:
+  - Update
+  ignore:
+  - dependency-name: mysql
+    versions:
+    - 8.0.23
